@@ -1,0 +1,38 @@
+Para crear el jar de "usoBeanPropio" hice un nuevo proyecto con la clase con este archivo pom.xml. 
+Esto es porque en el curso lo explican desde Eclipse sin Maven.
+Para importar el bean a la paleta se hace desde Palette Properties-> Add jar
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>pildoras.crearbeaninclusionimagenvideo236</groupId>
+    <artifactId>crearBeanInclusionImagenVideo236</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <exec.mainClass>pildoras.crearbeaninclusionimagenvideo236.CrearBeanInclusionImagenVideo236</exec.mainClass>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Configuración del complemento maven-jar-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <!-- Indicar la clase principal del JAR (si es una aplicación) -->
+                            <mainClass>pildoras.crearbeaninclusionimagenvideo236.CrearBeanInclusionImagenVideo236</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
